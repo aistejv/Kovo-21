@@ -1,0 +1,181 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+body{
+  background-color: #94BADF;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+h1{
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
+}
+h2{
+  font-family: 'Courgette', cursive;
+  font-size: 2.5rem;
+  color: #4F76AB;
+  text-align: center;
+  padding: 1rem;
+  font-weight: normal;
+}
+h3{
+  font-family: 'Courgette', cursive;
+  font-size: 1.1rem;
+  color: #AFC947;
+  text-align: center;
+  padding: 1rem;
+}
+nav ul{
+  padding: 1rem;
+  margin: 0;
+}
+ul li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  /*display: inline-block;*/
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+video{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.menu{
+  width: 100%;*/
+  min-height: 100%;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  vertical-align: middle;
+  padding: 15% 0 10% 0;
+  text-shadow: 1px 1px grey;
+}
+.menu>p{
+  font-size: 1.5rem;
+}
+.main{
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.search-bar{
+  background-color: #4F76AB;
+}
+.house-listings{
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-around;
+}
+.house-card{
+  /*max-width: 30%;*/
+  border: 1px solid #dedede;
+  margin: 1rem 1rem;
+}
+footer{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 90%;
+  color: #fff;
+  padding: 5% 0;
+}
+.green-link{
+  color: #AFC947;
+  text-decoration: none;
+}
+.house-card>p{
+  color: #838384;
+  text-align: justify;
+  padding: 1rem 1rem;
+}
+input{
+  padding: 1rem 0;
+  background-color: #4F76AB;
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+}
+::placeholder{
+  color:  #94BADF;
+  padding-left: 10%;
+  font-size: 1.2rem;
+}
+.price{
+  text-decoration: none;
+  color: #fff;
+  background: #bfd255;
+  background: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+  background: -webkit-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+  background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 );;
+  padding: 1rem;
+  border-radius: 10%;
+  margin-left: -0.5%;
+  margin-top: 7%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 800px)  {
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  video{
+    display: none;
+  }
+  .menu{
+    padding: 0.2rem;
+  }
+  .house-listings{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  footer{
+    background-image: url(img/background.jpg);
+    max-width: 100%;
+    padding: 0;
+  }
+  .price{
+    margin-top: 15%;
+  }
+}
+  @media only screen and (max-width: 400px){
+    .price{
+      margin-top: 25%;
+    }
+    h1{
+      font-size: 1.5rem;
+    }
+    h2{
+      font-size: 1rem;
+    }
+  }
